@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Toshiba Saturn 8x8";
+    src: url("./WebPlus_ToshibaSat_8x8.woff") format("woff");
+    font-display: fallback;
+}
+
+body {
+    max-width: 100%;
+    font-family: "Toshiba Saturn 8x8";
+    background-image: url("./bird.jpg");
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    max-width: 95%;
+    background-color: white;
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    padding: 10px;
+}
+
+.container > h1 {
+    text-shadow: -4px 3px teal;
+    letter-spacing: 2px;
+}
+
+.mt {
+    margin-top: 40px;
+}
+
+.pt {
+    padding-top: 40px;
+}
+
+a {
+    color: teal;
+}
+
+a:visited {
+    color: darkslategray;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 2em;
+}
+
+.image-flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.image-flex-container > img {
+    padding-right: 5px;
+}

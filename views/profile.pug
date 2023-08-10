@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title=name
+        link(rel="preload" as="style" href="/globals.css")
+        link(rel="stylesheet" href="/globals.css")
+    body 
+        .container
+            h1=name
+            h2=tagline
+            sub=bio
+            p.mt what does #{name} enjoy? do they know things? let's find out!
+            each item of items
+                h3=item.name
+                ol.mt
+                    each nestedItem of item.items
+                        li=nestedItem        
+            a(href="/") back home!

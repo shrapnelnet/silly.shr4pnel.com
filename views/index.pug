@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title="silly friends - listings"
+        link(rel="preload" as="style" href="/globals.css")
+        link(rel="stylesheet" href="/globals.css")
+    body
+        .container
+            h1 silly friends homepage
+            h3 home of the unified silly fanlistings
+            p.mt featuring...
+            .flex-container 
+                each user, index in users
+                    if index + 1 != users.length
+                        a(href=`/profile/${user}`)=user 
+                        span ,&nbsp;
+                    else
+                        a(href=`/profile/${user}`)=user
+            p.mt BUT FUCKING WAIT. YES. THERE IS MORE
+            sub learn the nuanced histories of our much envied lives and life stories. what do we like? why are we so interesting? 
+            p click on these fuckiing links you bastard. 
+            .image-flex-container 
+                img(src="/carmelldansen.gif" alt="carmelldansen stamp")
+                img(src="/terminally-online.png" alt="terminally online stamp")
+                img(src="/cat.png" alt="cat stamp")
+                img(src="/osaka.gif" alt="azumanga daioh osaka stamp")
+                img(src="/wiggly.gif" alt="visibly wonky stamp with \"this stamp is all wiggly:3\" written on it")
+                img(src="/silly.gif" alt="changing emoticon faces on a grey stamp")
+                img(src="/sylveon.png" alt="sylveon pokemon stamp")
+                img(src="/DNR.gif" alt="stamp that says do not resuscitate")
